@@ -18,5 +18,6 @@ type Query {
 
 type User {
   calendar: Calendar
+  firstName: String
   id: ID
 }

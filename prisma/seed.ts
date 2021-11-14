@@ -10,6 +10,7 @@ async function seed() {
     create: {
       email: 'ch.oberhofer@gmail.com',
       id: 'ckvzbg1bh0016sdnst0dbnklr',
+      firstName: 'Christoph',
       calendar: {
         create: {
           days: {

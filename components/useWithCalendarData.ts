@@ -12,6 +12,7 @@ export type Calendar = {
 
 export type User = {
   id: string;
+  firstName: string;
   calendar: Calendar;
 };
 
@@ -32,6 +33,8 @@ export const useWithCalendarData = (userId: string) => {
           query: `
           query ExampleQuery($userId: ID!) {
             user(id: $userId) {
+              id
+              firstName
               calendar {
                 days {
                   id

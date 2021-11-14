@@ -58,6 +58,7 @@ export interface NexusGenFieldTypes {
   }
   User: { // field return type
     calendar: NexusGenRootTypes['Calendar'] | null; // Calendar
+    firstName: string | null; // String
     id: string | null; // ID
   }
 }
@@ -76,6 +77,7 @@ export interface NexusGenFieldTypeNames {
   }
   User: { // field return type name
     calendar: 'Calendar'
+    firstName: 'String'
     id: 'ID'
   }
 }

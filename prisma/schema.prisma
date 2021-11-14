@@ -11,9 +11,10 @@ datasource db {
 }
 
 model User {
-  id       String    @id @default(cuid())
-  email    String    @unique
-  calendar Calendar? @relation(name: "CalendarUser")
+  id        String    @id @default(cuid())
+  email     String    @unique
+  firstName String
+  calendar  Calendar? @relation(name: "CalendarUser")
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
