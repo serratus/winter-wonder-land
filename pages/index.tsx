@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome {data?.firstName}</h1>
+        <h1 className={styles.title}>Welcome back {data?.firstName}</h1>
         {data ? <Calendar data={data.calendar} /> : null}
       </main>
     </div>
